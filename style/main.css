@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Rubik&family=Varela+Round&display=swap");
 
 :root {
   --primary-color: #130627;
   --secondary-color: #f5f5f5;
   --tersier-color: #c2fff5;
   --quartet-color: #5da599;
-  --primary-font: "Varela Round", sans-serif;
+  --primary-font: "Maven Pro", sans-serif;
+  --tersier-font: "Varela Round", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
 
@@ -197,7 +198,7 @@ span.horizontal-line {
 }
 
 section#popular {
-  padding: 2rem;
+  padding: 2rem 0.5em;
 }
 
 .item-preview {
@@ -279,7 +280,7 @@ section#popular {
 
 .direction {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -300,4 +301,11 @@ section#popular {
 
 .direction-btn:hover {
   background-color: var(--tersier-color);
+}
+
+.content-left {
+  text-align: left;
+  font-weight: 900;
+  color: var(--primary-color);
+  font-size: max(3vw, 1rem);
 }
