@@ -10,6 +10,10 @@
   --secondary-font: "Rubik", sans-serif;
 }
 
+body {
+  font-family: var(--secondary-font);
+}
+
 a:hover {
   color: inherit;
 }
@@ -137,12 +141,15 @@ a.cta .icon-cta {
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--primary-color);
+  background: #007991; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #78ffd6, #007991); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 75px;
   height: 75px;
   border-radius: 50%;
   z-index: -1;
   top: -50%;
+  left: -20px;
 }
 
 span.horizontal-line {
@@ -329,6 +336,7 @@ section#awards {
 .achivement-item {
   padding: 1em;
   background-color: var(--quartet-color);
+  color: var(--tersier-color);
   display: block;
   aspect-ratio: 1/1.05;
 }
@@ -396,8 +404,17 @@ footer {
 .footer-list {
   list-style-type: none;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
+  font-weight: 300;
+  letter-spacing: 0.075em;
+  font-size: 12px;
+}
+
+.last-word {
+  font-size: 12px;
 }
 
 .footer-list .header {
