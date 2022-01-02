@@ -10,6 +10,10 @@
   --secondary-font: "Rubik", sans-serif;
 }
 
+a:hover {
+  color: inherit;
+}
+
 h1 {
   font-weight: 900;
   font-size: 3rem;
@@ -377,6 +381,27 @@ section#blog {
 .blog-content {
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0 1rem;
+}
+
+.icon-text-footer {
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+}
+
+.footer-list .header {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 767px) {
