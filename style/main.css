@@ -12,7 +12,7 @@
 
 h1 {
   font-weight: 900;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 h2 {
@@ -308,4 +308,20 @@ section#popular {
   font-weight: 900;
   color: var(--primary-color);
   font-size: max(3vw, 1rem);
+}
+
+section#awards {
+  padding: 4rem 0;
+  background-color: var(--tersier-color);
+}
+
+.achievement-list {
+  overflow-x: auto;
+}
+
+.achivement-item {
+  padding: 1em;
+  background-color: var(--quartet-color);
+  display: block;
+  aspect-ratio: 1/1.05;
 }
